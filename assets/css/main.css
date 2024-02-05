@@ -183,3 +183,37 @@ ul {
   margin-bottom: 5px;
   color: #CCC;
 }
+
+
+/* chat*/
+#chatarea {
+  position: absolute;
+  top: 0;
+  left: 410px;
+  width: calc(100% - 410px);
+  height: 100%;
+  background-color: #CCC;
+}
+
+#chatnavbar {
+  height: 60px;
+  background-color: #EEE;
+  border-left: 1px solid #DDD;
+}
+
+#chatnavbar p {
+  margin: 0;
+  float: right;
+  margin-left: 20px;
+}
+
+#containercontactinfo {
+  display: inline-block;
+}
+
+#containercontactinfo .nomeuser {
+  font-size: 16px;
+  height: 60px;
+  line-height: 60px;
+}
+
