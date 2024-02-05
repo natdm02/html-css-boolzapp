@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>boolzapp</title>
-
+<!-- cdjs  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+<!-- font lato  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/fd384f8db8.js" crossorigin="anonymous"></script>
-
+<!-- css -->
   <link rel="stylesheet" href="assets/css/main.css">
 
 </head>
@@ -37,7 +37,9 @@
         <div id="containernotification">
             <i class="fas fa-bell-slash"></i>
             <p id="receivenotification">ricevi notifiche di nuovi messaggi</p>
-            <p id="activatenotification">Attiva notifiche dekstop <i class="fas fa-angle-right"></i> </p>
+            <p id="activatenotification"> 
+            <a href="#">Attiva notifiche dekstop</a> <i class="fas fa-angle-right"></i> 
+            </p>
         </div>
         <div id="containersearch">
             <i id="search-contact" class="fas fa-search"></i>
@@ -122,30 +124,26 @@
                 <p class="time">15:15</p>
               </div>
             </div>
-      </div>
+        </div>
 <!-- area chat parte destra -->
-      <main id="chatarea">
-        <nav id="chatnavbar">
+        <div id="chatarea">
+          <nav id="chatnavbar">
             <div id="containercontactinfo">
                 <img src="assets/img/avatar_1.jpg" alt="" class="user-photo">
                 <p class="nomeuser">michele</p>
             </div>
+            
+            <ul id="containerchattools">
+              <li><i class="fas fa-search"></i></li>
+              <li><i class="fas fa-paperclip"></i></li>
+              <li><i class="fas fa-ellipsis-v"></i></li>
+            </ul>
+      
 
-        </nav>
-      </main>
+          </nav>
+        </div>
 
   </div>
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>

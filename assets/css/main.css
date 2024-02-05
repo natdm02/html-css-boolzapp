@@ -1,3 +1,5 @@
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +10,7 @@
 ul {
   list-style: none;
 }
-
+/* --------------------- */
 #container {
   position: relative;
   width: 1396px;
@@ -28,8 +30,10 @@ body{
   background: linear-gradient(#009688 0%, #009688 150px, #f1f3ee 150px, #f1f3ee 100%)
 
 }
-/* -------------- */
-/* barra strumenti  */
+/* -----cont e body--------- */
+
+/*-------------------------barra strumenti-------------------------------------*/
+
 #sidebar {
   width: 410px;
   height: 100%;
@@ -64,7 +68,7 @@ body{
   cursor: pointer;
 }
 
-/* notifiche  */
+/*--------------------------notifiche------------------------------------------*/
 #containernotification {
   width: 100%;
   height: 90px;
@@ -103,7 +107,7 @@ body{
   font-size: 13px;
 }
 
-/* contatti  */
+/*---------------------------contatti---------------------------------------*/
 #containersearch {
   width: 100%;
   height: 50px;
@@ -138,6 +142,7 @@ body{
 #containercontact {
   height: auto;
   background-color: #FFF;
+  overflow-y: scroll;
 }
 
 .boxcontact {
@@ -199,7 +204,8 @@ body{
 }
 
 
-/* chat*/
+/*---------------------------------chat michele---------------------------------------*/
+
 #chatarea {
   position: absolute;
   top: 0;
@@ -210,7 +216,7 @@ body{
 }
 
 #chatnavbar {
-  height: 60px;
+  height: 50px;
   background-color: #EEE;
   border-left: 1px solid #DDD;
 }
@@ -229,5 +235,20 @@ body{
   font-size: 16px;
   height: 60px;
   line-height: 60px;
+}
+
+#containerchattools {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 20px;
+}
+
+#containerchattools li {
+  display: inline-block;
+  margin: 0 15px 0 15px;
+  font-size: 18px;
+  color: #80868A;
+  cursor: pointer;
 }
 
