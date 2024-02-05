@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'open Sans', sans-serif;
 }
 
 ul {
@@ -139,9 +140,7 @@ ul {
   background-color: #F4F5F5;
 }
 
-.activechat {
-  background-color: #E9EBEB;
-}
+
 
 .activechat.boxcontact:hover{
   background-color: #E9EBEB;
