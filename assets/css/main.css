@@ -10,8 +10,23 @@ ul {
 }
 
 #container {
-  height: 100vh;
   position: relative;
+  width: 1396px;
+  max-width: 100%;
+  margin-top:40px;
+  height: calc(100vh - 80px); 
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06),0 2px 5px 0 rgba(0, 0, 0, 0.06);
+  display: flex;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#009688 0%, #009688 150px, #f1f3ee 150px, #f1f3ee 100%)
+
 }
 /* -------------- */
 /* barra strumenti  */
