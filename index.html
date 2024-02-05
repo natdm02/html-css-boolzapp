@@ -3,34 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>boolzapp</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/fd384f8db8.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="assets/css/main.css">
+
 </head>
 
 <body>
 
-  <div class="grid">
-<!-- background verde e beige  -->
-    <div class="top-green"></div>
-    <div class="bottom-beige"></div>
+<!-- background  -->
 
-    <div id="container">
-      <div id="sideBar">
-          <div id="toolbar">
-              <img src="assets/img/avatar_1.jpg" class="user-photo" alt="">
-              <div class='auxIcon'>
-                  <i class="fas fa-spinner"></i>
-                  <i class="fas fa-comment-alt"></i>
-                  <i class="fas fa-ellipsis-v"></i>
+
+
+
+
+
+
+<!--------barra laterale------->
+
+  <div id="container">
+<!-- barra strumenti -->
+      <div id="sidebar">
+        <div id="toolbar">
+            <img src="assets/img/avatar_1.jpg" class="user-photo" alt="">
+            <div class='auxicon'>
+                <i class="fas fa-spinner"></i>
+                <i class="fas fa-comment-alt"></i>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+<!-- notifiche  -->
+        <div id="containernotification">
+            <i class="fas fa-bell-slash"></i>
+            <p id="receivenotification">ricevi notifiche di nuovi messaggi</p>
+            <p id="activatenotification">Attiva notifiche dekstop <i class="fas fa-angle-right"></i> </p>
+        </div>
+        <div id="containersearch">
+            <i id="search-contact" class="fas fa-search"></i>
+            <input type="text" name="search" id="ask" placeholder="cerca o inizia una nuova chat">
+        </div>
+<!-- contatti  -->
+        <div id="containercontact">
+
+            <div class="boxcontact activechat">
+                <img src="assets/img/avatar_2.jpg" alt="" class="userphoto">
+                <div class="ifouser">
+                    <p class="nomeuser">fabio</p>
+                    <p class="previewmessage"> Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="infomessage">
+                    <p class="time">16:05</p>
+                </div>
+            </div>
+
+            <div class="boxcontact">
+              <img src="assets/img/avatar_3.jpg" alt="" class="userphoto">
+              <div class="ifouser">
+                  <p class="nomeuser">fabio</p>
+                  <p class="previewmessage"> Lorem ipsum dolor sit amet.</p>
               </div>
-          </div>
+              <div class="infomessage">
+                  <p class="time">16:05</p>
+              </div>
+            </div>
+
+            <div class="boxcontact">
+              <img src="assets/img/avatar_4.jpg" alt="" class="userphoto">
+              <div class="ifouser">
+                  <p class="nomeuser">fabio</p>
+                  <p class="previewmessage">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="infomessage">
+                <p class="time">16:05</p>
+            </div>
+            </div>
+
+            <div class="boxcontact">
+              <img src="assets/img/avatar_5.jpg" alt="" class="userphoto">
+              <div class="ifouser">
+                  <p class="nomeuser">fabio</p>
+                  <p class="previewmessage">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="infomessage">
+                <p class="time">16:05</p>
+            </div>
+            </div>
+
+            <div class="boxcontact">
+              <img src="assets/img/avatar_6.jpg" alt="" class="userphoto">
+              <div class="ifouser">
+                  <p class="nomeuser">fabio</p>
+                  <p class="previewmessage">Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="infomessage">
+                  <p class="time">16:05</p>
+              </div>
+            </div>
+
+            <div class="boxcontact">
+              <img src="assets/img/avatar_7.jpg" alt="" class="userphoto">
+              <div class="ifouser">
+                  <p class="nomeuser">fabio</p>
+                  <p class="previewmessage">Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="infomessage">
+                  <p class="time">16:05</p>
+              </div>
+            </div>
+
+            <div class="boxcontact">
+              <img src="assets/img/avatar_8.jpg" alt="" class="userphoto">
+              <div class="ifouser">
+                  <p class="nomeuser">fabio</p>
+                  <p class="previewmessage">Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="infomessage">
+                <p class="time">16:05</p>
+              </div>
+            </div>
+
       </div>
-    </div>
   </div>
+<!-- contatti  -->
+
+
+
+
+
+
+
+
+
 
 
 </body>
