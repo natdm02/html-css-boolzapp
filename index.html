@@ -14,136 +14,250 @@
   <script src="https://kit.fontawesome.com/fd384f8db8.js" crossorigin="anonymous"></script>
 <!-- css -->
   <link rel="stylesheet" href="assets/css/main.css">
-
 </head>
 
-<body>  
+
+
+
+
+<body> 
+
+
+
 <!-- (background)  --> 
+<div class="wrap flex">
+  <div class="biggest-container flex">
 
-<!--------barra laterale sinistra ------->
-
-  <div id="container">
+<!-- barra laterale sinistra-->
+      <div class="messages">
+          <div class="flex space-between ">
+              <div class="flex">
+                  <div class="profile padding-left flex">
+                      <img src="assets/img/avatar_io.jpg" alt="img">
+                  </div>
+              </div>
 <!-- barra strumenti -->
-      <div id="sidebar">
-        <div id="toolbar">
-            <img src="assets/img/avatar_io.jpg" class="user-photo" alt="">
-            <div class='auxicon'>
-                <i class="fas fa-spinner"></i>
-                <i class="fas fa-comment-alt"></i>
-                <i class="fas fa-ellipsis-v"></i>
-            </div>
-        </div>
-<!-- notifiche  -->
-        <div id="containernotification">
-            <i class="fas fa-bell-slash"></i>
-            <p id="receivenotification">ricevi notifiche di nuovi messaggi</p>
-            <p id="activatenotification"> 
-            <a href="#">Attiva notifiche dekstop</a> <i class="fas fa-angle-right"></i> 
-            </p>
-        </div>
-        <div id="containersearch">
-            <i id="search-contact" class="fas fa-search"></i>
-            <input type="text" name="search" id="ask" placeholder="cerca o inizia una nuova chat">
-        </div>
-<!-- contatti  -->
-        <div id="containercontact">
+              <div class="flex container-icon icon-left">
+                <button class="button"><i class="fas fa-spinner" style="color: hsl(0deg 0% 69.41%);"></i></button>
+                <button class="button"><i class="fas fa-comment-alt" style="color: hsl(0deg 0% 69.41%);"></i></button>
+                <button class="button"><i class="fas fa-ellipsis-v" style="color: hsl(0deg 0% 69.41%);"></i></button>
+              </div>
+          </div>
 
-            <div class="boxcontact">
-                <img src="assets/img/avatar_2.jpg" alt="" class="user-photo">
-                <div class="ifouser">
-                    <p class="nomeuser"><strong>Fabio</strong></p>
-                    <p class="previewmessage"> Lorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="infomessage">
-                    <p class="time">16:05</p>
-                </div>
-            </div>
+          
+          <main>
+<!-- notifiche -->
+              <div class="notifications flex">
+                  <div class="profile">
+                      <span id="bell">
+                          <i class="fa-solid fa-bell-slash fa-xl" style="color:hsl(198.55deg 94.83% 77.25%);"></i>
+                      </span>
+                  </div>
+<!-- notifcations parte destra -->
+                  <div class="name-container">
+                      <h4 class="mg-bot1">Ricevi notifiche di nuovi messages</h4>
+                      <span><a href="">Attiva notifiche deckstop</a></span>
+                  </div>
+              </div>
 
-            <div class="boxcontact">
-              <img src="assets/img/avatar_3.jpg" alt="" class="user-photo">
-              <div class="ifouser">
-                  <p class="nomeuser"><strong>Samuele</strong></p>
-                  <p class="previewmessage"> Lorem ipsum dolor sit amet.</p>
-              </div>
-              <div class="infomessage">
-                  <p class="time">16:03</p>
-              </div>
-            </div>
+<!-- search -->
+              <div class="search-container">
+                  <div class="flex wrap-search" >
+                      <button id="search"><i class="fa-solid fa-magnifying-glass fa-sm" style="color: hsl(0deg 0% 69.41%);"></i></button>
+                      <input type="text" class="name" name="firstname" placeholder="Cerca o inizia una nuova chat">
+                  </div>
+              </div>  
+              
+<!-- liste contatti -->
 
-            <div class="boxcontact">
-              <img src="assets/img/avatar_4.jpg" alt="" class="user-photo">
-              <div class="ifouser">
-                  <p class="nomeuser"><strong>Alessandro B.</strong></p>
-                  <p class="previewmessage">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="infomessage">
-                <p class="time">15:50</p>
-            </div>
-            </div>
+              <div class="list-container">
+                  <ul class="flex column">
+                      
+                      <li class="flex vertical-padding2 space-between">
+                          <div class="flex">
+                              <div class="profile padding-left">
+                                  <img src="assets/img/avatar_1.jpg" alt="img">
+                              </div>
+                              
+                              <div class="name-container">
+                                  <h4 class="mg-bot1">Fabio</h4>
+                                  <span>lorem ipsum dolor sit amet</span>       
+                              </div>
+                          </div>  
+                          
+                          <div class="sent vertical-padding2">16:05</div>
+                      </li>
 
-            <div class="boxcontact">
-              <img src="assets/img/avatar_5.jpg" alt="" class="user-photo">
-              <div class="ifouser">
-                  <p class="nomeuser"><strong>Alessandro L.</strong></p>
-                  <p class="previewmessage">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="infomessage">
-                <p class="time">15:45</p>
-            </div>
-            </div>
+                      
+                      <li class="flex vertical-padding2 space-between">
+                          <div class="flex">
+                              <div class="profile padding-left">
+                                  <img src="assets/img/avatar_2.jpg" alt="img">
+                              </div>
+                              
+                              <div class="name-container">
+                                  <h4 class="mg-bot1">Samuele</h4>
+                                  <span>lorem ipsum dolor sit amet</span>       
+                              </div>
+                          </div>  
+                          
+                          <div class="sent vertical-padding2">16:03</div>
+                      </li>
 
-            <div class="boxcontact">
-              <img src="assets/img/avatar_6.jpg" alt="" class="user-photo">
-              <div class="ifouser">
-                  <p class="nomeuser"><strong>Claudia</strong></p>
-                  <p class="previewmessage">Lorem ipsum dolor sit amet.</p>
-              </div>
-              <div class="infomessage">
-                  <p class="time">15:40</p>
-              </div>
-            </div>
+                      
+                      <li class="flex vertical-padding2 space-between">
+                          <div class="flex">
+                              <div class="profile padding-left">
+                                  <img src="assets/img/avatar_3.jpg" alt="img">
+                              </div>
+                              
+                              <div class="name-container">
+                                  <h4 class="mg-bot1">SAMUELE</h4>
+                                  <span>lorem ipsum dolor sit amet</span>       
+                              </div>
+                          </div>  
+                          
+                          <div class="sent vertical-padding2">15:50</div>
+                      </li>
 
-            <div class="boxcontact">
-              <img src="assets/img/avatar_7.jpg" alt="" class="user-photo">
-              <div class="ifouser">
-                  <p class="nomeuser"><strong>Federico</strong></p>
-                  <p class="previewmessage">Lorem ipsum dolor sit amet.</p>
-              </div>
-              <div class="infomessage">
-                  <p class="time">15:22</p>
-              </div>
-            </div>
+                      
+                      <li class="flex vertical-padding2 space-between">
+                          <div class="flex">
+                              <div class="profile padding-left">
+                                  <img src="assets/img/avatar_4.jpg" alt="img">
+                              </div>
+                              
+                              <div class="name-container">
+                                  <h4 class="mg-bot1">ALESSANDRO B.</h4>
+                                  <span>lorem ipsum dolor sit amet</span>       
+                              </div>
+                          </div>  
+                          
+                          <div class="sent vertical-padding2">15:45</div>
+                      </li>
 
-            <div class="boxcontact">
-              <img src="assets/img/avatar_8.jpg" alt="" class="user-photo">
-              <div class="ifouser">
-                  <p class="nomeuser"><strong>Davide</strong></p>
-                  <p class="previewmessage">Lorem ipsum dolor sit amet.</p>
+                      
+                      <li class="flex vertical-padding2 space-between">
+                          <div class="flex">
+                              <div class="profile padding-left">
+                                  <img src="assets/img/avatar_5.jpg" alt="img">
+                              </div>
+                              
+                              <div class="name-container">
+                                  <h4 class="mg-bot1">ALESSANDRO L.</h4>
+                                  <span>lorem ipsum dolor sit amet</span>       
+                              </div>
+                          </div>  
+                        
+                          <div class="sent vertical-padding2">15:40</div>
+                      </li>
+
+                      
+                      <li class="flex vertical-padding2 space-between">
+                          <div class="flex">
+                              <div class="profile padding-left">
+                                  <img src="assets/img/avatar_6.jpg" alt="img">
+                              </div>
+                              
+                              <div class="name-container">
+                                  <h4 class="mg-bot1">CLAUDIA</h4>
+                                  <span>lorem ipsum dolor sit amet</span>       
+                              </div>
+                          </div>  
+                          
+                          <div class="sent vertical-padding2">15:22</div>
+                      </li>
+                      
+                      
+                      <li class="flex vertical-padding2 space-between">
+                          <div class="flex">
+                              <div class="profile padding-left">
+                                  <img src="assets/img/avatar_7.jpg" alt="img">
+                              </div>
+                              
+                              <div class="name-container">
+                                  <h4 class="mg-bot1">FEDERICO</h4>
+                                  <span>lorem ipsum dolor sit amet</span>       
+                              </div>
+                          </div>  
+                          
+                          <div class="sent vertical-padding2">15:15</div>
+                      </li> 
+                  </ul>
               </div>
-              <div class="infomessage">
-                <p class="time">15:15</p>
+          </main>
+      </div> 
+
+<!-- chat destra -->
+      <div class="chat">
+          <header  class="flex space-between">
+              
+              <div class="michele-chat padding-left flex">
+                  <div class="profile padding-left">
+                      <img src="assets/img/avatar_8.jpg" alt="img">
+                  </div>
+                  <div class="name-container">
+                      <h4 class="mg-bot1">MICHELE</h4>
+                      <span>Ultimo accesso oggi alle 16.26</span>
+                  </div>
               </div>
-            </div>
-        </div>
-<!-- area chat parte destra -->
-        <div id="chatarea">
-          <nav id="chatnavbar">
-            <div id="containercontactinfo">
-                <img src="assets/img/avatar_1.jpg" alt="" class="user-photo">
-                <p class="nomeuser">michele</p>
-            </div>
+
+<!-- barra strumenti parte destra  -->
+              <div class="flex container-icon">
+
+                  <button class="button"><i class="fa-solid fa-magnifying-glass fa-xl" style="color:hsl(0deg 0% 69.41%);"></i></button>
+                  <button class="button"><i class="fa-solid fa-paperclip fa-xl" style="color:hsl(0deg 0% 69.41%);"></i></button>
+                  <button class="button"><i class="fa-solid fa-ellipsis-vertical fa-xl" style="color:hsl(0deg 0% 69.41%);"></i></button>
+              </div>
+          </header>
+<!-- chat  -->
+          <main class="main-right flex">
+
+              <div class=" message">
+                  <div class="flex align">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius iure numquam dignissimos voluptas, veritatis non vel dolor corporis quisquam culpa illo sequi quaerat debitis id cumque a sapiente fuga totam?</p>
+                      <div class="chevron"><i class="fa-solid fa-chevron-down fa-sm" style="color:lightgray;"></i>
+                        
+                          <div class="info">
+                              <div>Info messagio</div>
+                              <div>Cancella mesaggio</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="time">16.13 </div>
+              </div>
+
             
-            <ul id="containerchattools">
-              <li><i class="fas fa-search"></i></li>
-              <li><i class="fas fa-paperclip"></i></li>
-              <li><i class="fas fa-ellipsis-v"></i></li>
-            </ul>
-      
+              <div class="message">
+                  <div class="flex align">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius iure numquam dignissimos voluptas, veritatis non vel dolor corporis quisquam culpa illo sequi quaerat debitis id cumque a sapiente fuga totam?</p>
+                      <div class="chevron"><i class="fa-solid fa-chevron-down fa-sm" style="color:lightgray;"></i>
+                        
+                          <div class="info">
+                              <div>Info messagio</div>
+                              <div>Cancella mesaggio</div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="time">16.15 </div>
+              </div>
+          </main>
 
-          </nav>
-        </div>
-
+          <footer class="footer-right flex ">
+<!-- face smile  -->
+              <button class="button"><i class="fa-regular fa-face-smile fa-xl" style="color: hsl(198deg 4.42% 44.31%);"></i></button>
+<!-- scrivi un messaggio  -->
+              <input type="text" class="name" name="firstname" placeholder="Scrivi un messaggio">
+<!-- microfono -->
+              
+              <button class="button" id="mic" ><i class="fa-solid fa-microphone fa-xl" ></i></button>
+            
+              </div>
+          </footer>
+          
+      </div>
   </div>
+</div>
 
 </body>
 </html>
