@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 img{
   max-width: 100%;
@@ -26,6 +26,7 @@ span{
 
 .space-between{
   justify-content: space-between;
+  height: 70PX;
 }
 
 header{
@@ -65,6 +66,7 @@ header{
 .button{
   border: none;
   font-size: 1rem;
+  background-color: white;
 } 
 
 
@@ -249,7 +251,7 @@ input[type=text]{
 /* footer  */
 
 footer{
-  height: 80px;
+  height: 90px;
   background-color: hsl(26.67deg 27.27% 93.53%);
   position: relative;
 }  
@@ -277,13 +279,13 @@ footer input[type=text]{
   
 /* break point header */
 
-@media screen and (max-width:749px) {
+@media screen and (max-width:992px) {
   .messages .container-icon{
       display: none;
   }
 }
 
-@media screen and (max-width:504px){ 
+@media screen and (max-width:542px){ 
   .messages, .container-icon{
       display: none;
   }
@@ -296,7 +298,7 @@ footer input[type=text]{
 }
 
 /* break point main left  */
-@media screen and (max-width:749px) {
+@media screen and (max-width:992px) {
   
   main .list-container{
       height: calc(95vh - 82px);
@@ -321,7 +323,7 @@ footer input[type=text]{
 }
 
 /* break-point main right  */
-@media screen and (max-width:749px) {
+@media screen and (max-width:992px) {
   main .message:nth-child(even){
       margin-left: 1.5rem;
   }
@@ -330,7 +332,7 @@ footer input[type=text]{
   }
 }
 
-@media screen and (max-width:504px){
+@media screen and (max-width:542px){
   main .message:first-child{
       margin-top: 2rem;       
   }
@@ -338,3 +340,16 @@ footer input[type=text]{
       width: 100%;
   } 
 }
+
+ /* footer  */
+@media screen and (max-width:542px){
+  footer button{
+      display: none;
+  }
+  footer input[type=text]{
+      margin: 0 1rem;
+  }
+  .bonus *{
+      display: none;
+  }
+}   
